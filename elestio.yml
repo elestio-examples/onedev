@@ -7,6 +7,12 @@ ports:
     public: true
     path: "/"
     isAuth: false
+  - protocol: "TCP"
+    targetProtocol: "TCP"
+    listeningPort: "2022"
+    targetIP: "172.17.0.1"
+    targetPort: "6611"
+    public: true
 environments:
   - key: "ADMIN_PASSWORD"
     value: "random_password"
@@ -18,10 +24,10 @@ environments:
     value: "172.17.0.1"
   - key: "SMTP_PORT"
     value: "25"
-  - key: "SMTP_AUTH_STRATEGY"
-    value: "NONE"
   - key: "SMTP_FROM_EMAIL"
     value: "[DOMAIN]@vm.elestio.app"
+  - key: "initial_ssh_root_url"
+    value: "ssh://[CI_CD_DOMAIN]:2022"
 
 config:
   runTime: "dockerCompose"

@@ -14,3 +14,4 @@ services:
             - initial_password=${ADMIN_PASSWORD}
             - initial_email=${ADMIN_EMAIL}
             - initial_server_url=${BASE_URL}
+            - initial_ssh_root_url=${initial_ssh_root_url}
