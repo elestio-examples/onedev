@@ -10,10 +10,10 @@ Deploy OneDev server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can can open OneDev UI here:
+You can open OneDev UI here:
 
     URL: https://[CI_CD_DOMAIN]
-    email:[ADMIN_EMAIL]
+    email: [ADMIN_EMAIL]
     password: [ADMIN_PASSWORD]
 
 # Configuring SMTP server
