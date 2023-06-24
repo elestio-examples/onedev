@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+    server:
+        image: 1dev/server
+        restart: always
+        volumes:
+            - '/var/run/docker.sock:/var/run/docker.sock'
+            - './data:/opt/onedev'
+        ports:
+            - '172.17.0.1:6610:6610'
+            - '172.17.0.1:6611:6611'
+        environment:
+            - initial_user=root
+            - initial_password=${ADMIN_PASSWORD}
+            - initial_email=${ADMIN_EMAIL}
+            - initial_server_url=${BASE_URL}
+            - initial_ssh_root_url=${initial_ssh_root_url}
