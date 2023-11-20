@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-rm -f ./server-product/docker/docker-compose.yaml
 
 mvn clean package
+rm -f ./server-product/docker/docker-compose.yaml
 
 cd ./server-product/target
 rm -rf docker
