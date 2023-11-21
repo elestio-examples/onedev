@@ -2,6 +2,7 @@
 
 mvn clean package
 rm -f ./server-product/docker/docker-compose.yaml
+rm -f ./server-product/docker/build.sh
 
 cd ./server-product/target
 rm -rf docker
