@@ -13,7 +13,7 @@ mv docker/onedev-$buildVersion docker/app
 
 cd ../../
 
-cp -rf /server-product/target/docker/* ./
+cp -rf ./server-product/target/docker/* ./
 
 mv docker-compose-new.yml docker-compose.yml
 mv Dockerfile.server Dockerfile
