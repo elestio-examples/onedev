@@ -14,6 +14,8 @@ ports:
     targetPort: "6611"
     public: true
 environments:
+  - key: "SOFTWARE_VERSION_TAG"
+    value: "latest"
   - key: "ADMIN_PASSWORD"
     value: "random_password"
   - key: "ADMIN_EMAIL"
